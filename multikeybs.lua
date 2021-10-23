@@ -1,9 +1,9 @@
 clear()
 
 --expand this section if you have more keyboards
-lmc_device_set_name('MACROS1', "NP0303");
--- lmc_assign_keyboard('MACROS1')
-lmc_device_set_name('MACROS2', "ID_0002");
+--lmc_device_set_name('MACROS1', "NP0303");
+lmc_assign_keyboard('MACROS1')
+--lmc_device_set_name('MACROS2', "ID_0002");
 --lmc_assign_keyboard('MACROS2')
 lmc_print_devices()
 
@@ -143,16 +143,16 @@ lmc_set_handler('MACROS1', function(button, direction)
 	end
 end)
 
---just copy this then rename the keyboard and probably the (2) is you want
-lmc_set_handler('MACROS2', function(button, direction)
-        if (direction == 0) then return end
-	if type(config[button]) == "string" then
-                print(' ')
-                print('Your key ID number is: (2)   ' .. button)
-	        print('It was assigned string:    ' .. config[button])
-		sendToAHK(2, button)
-	else
-                print(' ')
-                print('Not yet assigned: ' .. button)
-	end
-end)
+--just copy this block then rename the keyboard and replace the "2" to your preffered number
+--lmc_set_handler('MACROS2', function(button, direction)
+--        if (direction == 0) then return end
+--	if type(config[button]) == "string" then
+--                print(' ')
+--                print('Your key ID number is: (2)   ' .. button)
+--	        print('It was assigned string:    ' .. config[button])
+--		sendToAHK(2, button)
+--	else
+--                print(' ')
+--                print('Not yet assigned: ' .. button)
+--	end
+--end)
