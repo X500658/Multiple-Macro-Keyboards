@@ -27,3 +27,9 @@ AutoHotkey:
 2. Replace the path in the "FileRead" line,
 3. Replace the code within the switch case line to what you want to do. TaranVH provides an if-else version if thats what you prefer. Ignore that all of them use a Runner function, that just what I did to separate the keypress and the macro.
 4. Good Luck
+
+To save time making Autohotkey switch case multiple keyboard cases, included is the "ahk multi keyb maker" files.
+Run the exe file and input your stuff.
+The incuded txt file is a sample output.
+If ever the exe doesnt run, there is the source code C file for you to compile 
+:)
